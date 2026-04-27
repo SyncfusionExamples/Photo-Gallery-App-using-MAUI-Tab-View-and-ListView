@@ -1,9 +1,39 @@
 # Photo-Gallery-App-using-MAUI-Tab-View-and-ListView
 
-This sample shows how to build a photo gallery app using .NET MAUI TabView and ListView controls in your .NET MAUI application.
+**Repository Description**  
+This repository contains a .NET MAUI sample application that demonstrates how to build a photo gallery app using the Syncfusion MAUI TabView and ListView components.
 
-## Sample
+The sample illustrates how to organize photos, albums, and favorites into separate tabs using a bottom‑placed TabView, while displaying rich, scrollable content using ListView layouts.
 
+## Project Overview
+The purpose of this project is to help developers understand how to combine the Syncfusion MAUI TabView and ListView controls to build a modern, feature‑rich photo gallery application in .NET MAUI. It demonstrates tab‑based navigation, icon customization, grid layouts, and responsive data presentation.
+
+## Features
+- Integration of Syncfusion MAUI TabView component  
+- Bottom TabBar placement with customizable icons  
+- Photo, Album, and Favorites tabs  
+- Grid‑based image layout using ListView  
+- Font‑based icon customization using `FontImageSource`  
+- Dynamic data binding and item tap handling  
+
+## Prerequisites
+Ensure the following requirements are met before running the project:
+- Visual Studio with **.NET MAUI workload** installed  
+- Supported platform SDKs (Android, iOS, Windows, or MacCatalyst)
+
+## Installation and Running the Application
+1. Clone this repository to your local machine.
+2. Open the solution file in Visual Studio.
+3. Restore NuGet packages if prompted.
+4. Select the target platform (Android, iOS, Windows, or MacCatalyst).
+5. Build and run the project to view the Photo Gallery application.
+
+## Sample Layout
+This project includes a XAML‑based UI implementation that demonstrates:
+- Tab header customization using `SfTabItem`
+- Icon color binding through the selected tab state
+- Grid layouts for images using `SfListView` and `GridLayout`
+- Responsive image presentation in multiple tab views  
 ```xaml
     <Grid>
         <tabView:SfTabView EnableRippleAnimation="False" TabBarPlacement="Bottom" EnableSwiping="True" IndicatorStrokeThickness="0"  TabBarHeight="55">
@@ -70,16 +100,31 @@ This sample shows how to build a photo gallery app using .NET MAUI TabView and L
     </Grid>
 ```
 
-## Requirements to run the demo
+## Usage
+Run the application and interact with the following tabs:
+- **Photos:** Displays images in a grid layout  
+- **Albums:** Shows album cards with cover images and item counts  
+- **Favorites:** Displays favorite photos grouped by date  
 
-To run the demo, refer to [System Requirements for .NET MAUI](https://help.syncfusion.com/maui/system-requirements)
+You can modify the data bindings and layouts in XAML to customize the gallery behavior.
 
-## Troubleshooting:
+## Documentation
+- **General Syncfusion documentation:**  
+  https://help.syncfusion.com/
+- **.NET MAUI Introduction:**  
+  https://help.syncfusion.com/maui/introduction/overview
 
-### Path too long exception
+## Additional Resources
+- **System requirements for .NET MAUI:**  
+  https://help.syncfusion.com/maui/system-requirements
 
-If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
+## Troubleshooting
+
+### Path Too Long Exception
+If you encounter a *path too long* error when building the project:
+1. Close Visual Studio.
+2. Rename the repository folder to a shorter name.
+3. Reopen the solution and rebuild the project.
 
 ## License
-
-Syncfusion has no liability for any damage or consequence that may arise from using or viewing the samples. The samples are for demonstrative purposes. If you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion's samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion's samples
+Syncfusion has no liability for any damage or consequence that may arise from using or viewing the samples. The samples are for demonstrative purposes only. By accessing or using these samples, you acknowledge that Syncfusion shall not be held responsible for any damages resulting from their use.
